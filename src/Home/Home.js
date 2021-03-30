@@ -13,7 +13,7 @@ export default function Home() {
             <Navbar/>
             <div className="row">   
                 <div class="col-6 card  border-0  mt-4  ml-5">
-                      <Image class="shadow p-1 md-3 bg-white p-1 rounded mt-3  ml-3  border-1 " src={photo} alt="Card image" style={{height:'250px'}}/> 
+                      <img class="shadow p-1 md-3 bg-white p-1 rounded mt-3  ml-3  border-1 " src={photo} alt="Card image" style={{height:'250px'}}/> 
                 </div>
                 <div className='col-1 card  mt-2 ml-2 border-0'>
                     <button type="button" className="btn btn-primary " style={{marginTop:'100%'}}> start<VscDebugStart/> </button>
