@@ -16,6 +16,7 @@ export default function Search() {
                         onChange={onChange}
                         value={value}
                         dayPlaceholder="Date From"></DatePicker>
+                        <p>Date From</p>
                 </div>
                 <div  className="col-md " style={{marginTop:'3%',}}>
                     <DatePicker
