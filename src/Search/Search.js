@@ -32,6 +32,7 @@ export default function Search() {
                 </div>
                 <div  className="col-md-3" style={{marginTop:'3%'}}>
                         <BiReset style={{fontSize:'30px'}}/>
+                        <p style={{fontSize:'20px'}}>Reset</p>
                 </div>
             </div>
             <Table striped bordered hover size='lg' style={{marginTop:'5%'}}>
