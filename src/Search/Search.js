@@ -3,6 +3,7 @@ import Navbar from  '../Navbar/Navbar'
 import DatePicker from 'react-date-picker';
 import {BiReset} from 'react-icons/bi'
 import {Table} from 'react-bootstrap'
+import {HiSearch} from 'react-icons/hi'
 
 export default function Search() {
     const [value, onChange] = useState(new Date());
@@ -16,7 +17,6 @@ export default function Search() {
                         onChange={onChange}
                         value={value}
                         dayPlaceholder="Date From"></DatePicker>
-                        <p>Date From</p>
                 </div>
                 <div  className="col-md " style={{marginTop:'3%',}}>
                     <DatePicker
@@ -25,7 +25,10 @@ export default function Search() {
                         dayPlaceholder="Date To"></DatePicker>
                 </div>
                 <div  className="col-md-4" style={{marginTop:'3%'}}>
-                    <input type="text" placeholder="Search" />
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
                 </div>
                 <div  className="col-md-3" style={{marginTop:'3%'}}>
                         <BiReset style={{fontSize:'30px'}}/>
